@@ -1,0 +1,15 @@
+{
+  "name": "pruebanpm",
+  "version": "1.0.0",
+  "description": "Prueba de NPM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sandra Cerro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.1.0"
+  }
+}
