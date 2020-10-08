@@ -1,0 +1,72 @@
+extends ../layout
+
+block content
+    form(method="POST", action="/productos/create")
+    .form-group
+        label Nombre
+        input.form-control(type="text", name="nombre", required)
+    .form-group
+        label Primer apellido
+        input.form-control(type="text", name="primerapellido", required)
+    .form-group
+        label Segundo apellido
+        input.form-control(type="text", name="segundoapellido", required)
+    .form-group
+        label Empresa
+        textarea.form-control(name="empresa", rows="5", required)
+    .form-group
+        label Provincia
+        select.form-control(name="provincia", required)
+            option(value='alava') Álava
+            option(value='albacete') Albacete
+            option(value='alicante') Alicante
+            option(value='almeria') Almería
+            option(value='asturias') Asturias
+            option(value='avila') Ávila
+            option(value='badajoz') Badajoz
+            option(value='barcelona') Barcelona
+            option(value='burgos') Burgos
+            option(value='caceres') Cáceres
+            option(value='cadiz') Cádiz
+            option(value='cantabria') Cantabria
+            option(value='castellon') Castellón
+            option(value='ceuta') Ceuta
+            option(value='ciudadreal') Ciudad Real
+            option(value='cordoba') Córdoba
+            option(value='cuenca') Cuenca
+            option(value='girona') Girona
+            option(value='laspalmas') Las Palmas
+            option(value='granada') Granada
+            option(value='guadalajara') Guadalajara
+            option(value='guipuzcoa') Guipúzcoa
+            option(value='huelva') Huelva
+            option(value='huesca') Huesca
+            option(value='illesbalears') Illes Balears
+            option(value='jaen') Jaén
+            option(value='acoruña') A Coruña
+            option(value='larioja') La Rioja
+            option(value='leon') León
+            option(value='lleida') Lleida
+            option(value='lugo') Lugo
+            option(value='madrid') Madrid
+            option(value='malaga') Málaga
+            option(value='melilla') Melilla
+            option(value='murcia') Murcia
+            option(value='navarra') Navarra
+            option(value='ourense') Ourense
+            option(value='palencia') Palencia
+            option(value='pontevedra') Pontevedra
+            option(value='salamanca') Salamanca
+            option(value='segovia') Segovia
+            option(value='sevilla') Sevilla
+            option(value='soria') Soria
+            option(value='tarragona') Tarragona
+            option(value='santacruztenerife') Santa Cruz de Tenerife
+            option(value='teruel') Teruel
+            option(value='toledo') Toledo
+            option(value='valencia') Valencia/Valéncia
+            option(value='valladolid') Valladolid
+            option(value='vizcaya') Vizcaya
+            option(value='zamora') Zamora
+            option(value='zaragoza') Zaragoza
+    input.btn.btn-info.btn-block(type="submit", value="Enviar")

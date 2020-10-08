@@ -1,5 +1,40 @@
-extends layout
+extends layout.pug
 
-block content
-  h1= title
-  p Welcome to #{title}
+block contenido
+	h2 Cabecera del index
+	p= title
+	p El título es: #{title}
+	.primero
+		p Párrafo 1 
+		p Párrafo 2
+	.segundo
+		a.enlace(href="http://google.com", target="_blank") Google
+		br
+		a.enlace(href="http://20minutos.es") 20Minutos
+		p#id párrafo con id
+	.tercero
+		p#main.principal.rojo.border-gray Éste es el párrafo principal
+	.cuarto
+		// Comentario para el HTML
+		//- Switch case en PUG
+		case productos 
+			when 0
+				p No tienes productos
+			when 1
+				p Tienes un producto
+			default
+				p Tienes #{productos} productos
+	.quinto
+		//- Integrar código javascript
+		ul
+			- for(let i = 0; i<animales.length; i++)
+				li= animales[i]
+
+	.sexto
+		//- Foreach en PUG
+		ol
+			each animal, index in animales
+				li #{index}: #{animal}
+
+block footer
+	p Footer del index

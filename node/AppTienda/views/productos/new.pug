@@ -1,0 +1,22 @@
+extends ../layout.pug
+
+block content
+	h2 Formulario inserción producto
+	form(method="POST", action="/productos/create")
+		.form-group
+			label Nombre del producto
+			input.form-control(type="text", name="nombre", required)
+		.form-group
+			label Precio
+			input.form-control(type="text", name="precio", required)
+		.form-group
+			label Descripción
+			textarea.form-control(name="descripcion", rows="5", required)
+		.form-group
+			label Departamento
+			select.form-control(name="departamento", required)
+				option(value="electrodomesticos") Electrodomésticos
+				option(value="informatica") Informática
+				option(value="hogar") Hogar
+				option(value="fotografia") Fotografía
+		input.btn.btn-info.btn-block(type="submit", value="Enviar")
