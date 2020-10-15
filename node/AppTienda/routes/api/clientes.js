@@ -52,7 +52,7 @@ router.delete('/:idCliente', check("idCliente").isMongoId(), (req, res) => {
         return res.json(erroresValidacion.array());
     }
 
-    cliente.findByIdAndDelete(req.params.idcliente)
+    Cliente.findByIdAndDelete(req.params.idCliente)
         .then(clienteBorrado => {
             res.json({
                 success: "El cliente se ha borrado correctamente",

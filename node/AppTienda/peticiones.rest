@@ -65,3 +65,30 @@ Content-Type: application/json
     "password": "12345",
     "email": "sankiry93@gmail.com"
 }
+
+###
+GET http://localhost:3000/api/clientes
+###
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+    "nombre": "Señor",
+    "apellidos": "Ape Llidos",
+    "direccion": "Calle La Calle",
+    "email": "senorllidos@gmail.com",
+    "dni": "61406598W"
+}
+###
+PUT http://localhost:3000/api/clientes
+ Content-Type: application/json
+
+{
+    "nombre": "Homer",
+    "apellidos": "Simpson",
+    "direccion": "Calle Falsa, 123",
+    "_id": "5f88921b8b36d10d3c0bc48b"
+}
+###
+DELETE http://localhost:3000/api/clientes/5f8892758b36d10d3c0bc48c
+ 
