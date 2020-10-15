@@ -108,12 +108,16 @@ Implementa todas las acciones disponibles para el trabajo con ficheros. La mayor
 * nodemon (global) - despliegue en caliente
 * sequelize - ORM potente para Node 
 * tailwind - Similar a bootstrap
+* express validator - crear validadores para las peticiones
+    * comprobar como funciona check y validationResult
+* mongoose - ORM de mongodb
 
 ## MongoDb
 
-- Levantar con `mongod`
-- Entrar a la consola de mongo con `mongo`
-- `use nombrebbdd` - Definir bbdd
+- Levantar con ``mongod --path=""``
+- ``mongod --dbpath="/Users/sanrules/Curso Mean/mongodata"``
+- Entrar a la consola de mongo con ``mongo``
+- ``use nombrebbdd`` - Definir bbdd
   - db.personas.insert();
   - db.personas.find();
 - mongoose - ORM para mongodb
@@ -121,4 +125,11 @@ Implementa todas las acciones disponibles para el trabajo con ficheros. La mayor
 ### Conceptos básicos
 - Colecciones ~ tablas
 - Documento ~ registro
+
+### Mongoose
+- ``npm install mongoose``
+- Mongoose cuenta con tipos de variables a la hora de definir un objeto.
+- Creación de un modelo:
+    - Carpeta models -> nuevo modelo con esta estructura: (AppTienda)
+    - Importar dicho modelo
 

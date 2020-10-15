@@ -1,0 +1,67 @@
+GET http://localhost:3000/pruebas/insert
+###
+GET http://localhost:3000/pruebas/insert_v2
+###
+GET http://localhost:3000/pruebas/insert_v3
+###
+GET http://localhost:3000/pruebas/find
+###
+GET http://localhost:3000/pruebas/find_by_name
+###
+GET http://localhost:3000/pruebas/find_mayores_edad
+###
+GET http://localhost:3000/pruebas/modificar
+###
+GET http://localhost:3000/pruebas/modificar_v2
+###
+GET http://localhost:3000/pruebas/modificar_v3
+###
+GET http://localhost:3000/pruebas/mismo_departamento
+###
+GET http://localhost:3000/pruebas/activas
+
+### API ###
+
+###
+GET http://localhost:3000/api/productos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOiI1ZjgxOGI4MTgyM2ZkMDNjMzg4NTdkOTIiLCJmZWNoYUNyZWFjaW9uIjoxNjAyMzMwMjEzLCJmZWNoYUV4cGlyYWNpb24iOjE2MDIzMzA4MTMsImlhdCI6MTYwMjMzMDIxM30.zVpgCQTcDs3HNp6KbUHODZ1LH87JyCfuyObrwCzNMlQ
+###
+POST http://localhost:3000/api/productos
+Content-Type: application/json
+
+{
+    "nombre" : "Picadora Moulinex",
+    "precio" : 123,
+    "descripcion" : "para hacer papilla",
+    "departamento" : "electrodomesticos"
+}
+###
+PUT http://localhost:3000/api/productos
+Content-Type: application/json
+
+{
+    "_id" : "5f8177c73a164e16ad010f7a",
+    "precio" : 105
+}
+###
+DELETE http://localhost:3000/api/productos/5f8177c73a164e16ad010f7a
+
+###
+POST http://localhost:3000/api/usuarios/registro
+Content-Type: application/json
+
+{
+    "nombre": "Sandra",
+    "apellidos": "Cerro",
+    "username": "sanrules",
+    "password": "12345",
+    "email": "sankiry93@gmail.com"
+}
+###
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+    "password": "12345",
+    "email": "sankiry93@gmail.com"
+}

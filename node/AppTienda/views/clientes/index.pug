@@ -1,0 +1,31 @@
+extends ../layout.pug
+
+block content
+    h2 Todos los clientes
+    table.table
+        thead
+            tr
+                th id
+                th Nombre
+                th Apellidos
+                th Dirección
+                th Email
+                th Dni
+                th Acciones
+        tbody
+            each cliente in clientes.length ? clientes : "No existen clientes"
+                tr
+                    td= cliente._id
+                    td= cliente.nombre
+                    td= cliente.apellidos
+                    td= cliente.direccion
+                    td= cliente.email
+                    td= cliente.dni
+                    td
+                        a.btn.btn-sm.btn-primary(href="/clientes/" + cliente._id) Ver
+                        a.btn.btn-sm.btn-info.ml-2(href="/clientes/edit/" + cliente._id) Editar
+                        a.btn.btn-sm.btn-danger.ml-2(href="/clientes/delete/" + cliente._id, onclick="return confirm('Se va a borrar el cliente')") Borrar
+    
+    script.
+        
+

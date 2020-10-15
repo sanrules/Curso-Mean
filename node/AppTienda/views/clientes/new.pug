@@ -1,0 +1,21 @@
+extends ../layout.pug
+
+block content
+	h2 Formulario creación de clientes
+	form(method="POST" action="/clientes/create")
+		.form-group
+			label Nombre
+			input.form-control(type="text" name="nombre", required)
+		.form-group
+			label Apellidos
+			input.form-control(type="text" name="apellidos", required)
+		.form-group
+			label Direción
+			input.form-control(type="text" name="direccion", required)
+		.form-group
+			label Email
+			input.form-control(type="text" name="email", required)
+		.form-group
+			label DNI
+			input.form-control(type="text" name="dni", required)
+		input.btn.btn-info.btn-block(type="submit" value="Enviar")
