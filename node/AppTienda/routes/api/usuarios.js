@@ -3,7 +3,6 @@ const Usuario = require('../../models/usuario');
 const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const moment = require('moment');
-const { create } = require('../../models/usuario');
 
 router.post('/registro', async (req, res) => {
 

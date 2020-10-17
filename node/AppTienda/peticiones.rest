@@ -24,7 +24,7 @@ GET http://localhost:3000/pruebas/activas
 
 ###
 GET http://localhost:3000/api/productos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOiI1ZjgxOGI4MTgyM2ZkMDNjMzg4NTdkOTIiLCJmZWNoYUNyZWFjaW9uIjoxNjAyMzMwMjEzLCJmZWNoYUV4cGlyYWNpb24iOjE2MDIzMzA4MTMsImlhdCI6MTYwMjMzMDIxM30.zVpgCQTcDs3HNp6KbUHODZ1LH87JyCfuyObrwCzNMlQ
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOiI1ZjgxOGI4MTgyM2ZkMDNjMzg4NTdkOTIiLCJmZWNoYUNyZWFjaW9uIjoxNjAyODYwNzI3LCJmZWNoYUV4cGlyYWNpb24iOjE2MDI4NjEzMjcsImlhdCI6MTYwMjg2MDcyN30.wLTsIogB_bz_MaPnVkXUS6OQ-6Sccjj2d-Ir893kvt8
 ###
 POST http://localhost:3000/api/productos
 Content-Type: application/json
@@ -91,4 +91,3 @@ PUT http://localhost:3000/api/clientes
 }
 ###
 DELETE http://localhost:3000/api/clientes/5f8892758b36d10d3c0bc48c
- 

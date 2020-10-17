@@ -111,8 +111,11 @@ Implementa todas las acciones disponibles para el trabajo con ficheros. La mayor
 * express validator - crear validadores para las peticiones
     * comprobar como funciona check y validationResult
 * mongoose - ORM de mongodb
+* ngrok - permite acceder a una url de nuestro ordenador desde fuera
+    * alias ngrok='/Users/mario/ngrok'
+* heroku
 
-## MongoDb
+# MongoDb
 
 - Levantar con ``mongod --path=""``
 - ``mongod --dbpath="/Users/sanrules/Curso Mean/mongodata"``
@@ -122,14 +125,27 @@ Implementa todas las acciones disponibles para el trabajo con ficheros. La mayor
   - db.personas.find();
 - mongoose - ORM para mongodb
 
-### Conceptos básicos
+## Conceptos básicos
+
 - Colecciones ~ tablas
 - Documento ~ registro
 
-### Mongoose
+## Mongoose
+
 - ``npm install mongoose``
 - Mongoose cuenta con tipos de variables a la hora de definir un objeto.
 - Creación de un modelo:
     - Carpeta models -> nuevo modelo con esta estructura: (AppTienda)
     - Importar dicho modelo
+    
+# Angular
 
+* Typescript -> **compilar**: tsc nombreFichero.ts
+* Decorador -> agregan un extra sobre la función a la que se está aplicando
+* ```ng serve -o``` o ```ng serve```
+* ```ng generate component Nombre --skipTests```
+
+## Directivas
+
+* ngStyle -> modificar dinámicamente los estilos
+* ngClass -> modificar dinámicamente las clases

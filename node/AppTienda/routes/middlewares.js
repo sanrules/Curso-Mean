@@ -1,5 +1,6 @@
 const jsonwebtoken = require('jsonwebtoken');
 const moment = require('moment');
+const Usuario = require('../models/usuario');
 
 const checkToken = async (req, res, next) => {
     try {
@@ -19,7 +20,7 @@ const checkToken = async (req, res, next) => {
             throw { message: "El token está caducado" }
         }
 
-        req.user = await Usiario.findById(obj.usuarioId);
+        req.user = await Usuario.findById(decodedToken.usuarioId);
 
     } catch (error) {
         return res.status(401).json({ error: error.message })
