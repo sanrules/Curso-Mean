@@ -20,7 +20,7 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick() {
+  onClick(): void {
     console.log(this.nuevaTarea);
     this.tareaCreada.emit(this.nuevaTarea);
   }

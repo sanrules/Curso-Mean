@@ -1,0 +1,15 @@
+<div id="calculadora">
+  <div id="pantalla">
+    {{ operacion }}
+  </div>
+  <div id="botones">
+    <div class="operandos">
+      <app-boton *ngFor="let op of operandos" class="operando" [valor]=op (pulsarBoton)=realizarOperacion($event)>
+      </app-boton>
+    </div>
+    <div class="operaciones">
+      <app-boton *ngFor="let op of operaciones" class="operacion" [valor]=op (pulsarBoton)=realizarOperacion($event)>
+      </app-boton>
+    </div>
+  </div>
+</div>
