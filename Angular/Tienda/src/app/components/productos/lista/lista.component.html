@@ -1,0 +1,24 @@
+<h2> Lista de productos </h2>
+<table class="table" aria-describedby="lista de productos">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Descripción</th>
+      <th>Departamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+      <td> {{producto._id}} </td>
+      <td> {{producto.nombre}} </td>
+      <td> {{producto.precio}} </td>
+      <td> {{producto.descripcion}} </td>
+      <td> {{producto.departamento}} </td>
+      <td>
+        <button class="btn btn-sm btn-danger" (click)="onClickEliminar(producto)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

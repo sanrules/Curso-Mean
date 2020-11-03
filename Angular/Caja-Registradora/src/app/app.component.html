@@ -1,0 +1,5 @@
+<app-lista-productos [titulo]="'Comida'" [productos]="comida" (enviaSeleccionado)="addListaSeleccionados($event)">
+</app-lista-productos>
+<app-lista-productos [titulo]="'Bebida'" [productos]="bebida" (enviaSeleccionado)="addListaSeleccionados($event)">
+</app-lista-productos>
+<app-comanda [comanda]="productosSeleccionados"></app-comanda>

@@ -1,0 +1,17 @@
+.libros {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.libro {
+  border: 1px solid black;
+  width: 20%;
+  height: 350px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.libro img {
+  height: 60%;
+  width: 100%;
+}

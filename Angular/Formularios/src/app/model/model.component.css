@@ -1,0 +1,13 @@
+input.ng-invalid {
+  border: 1px solid tomato;
+}
+
+.ng-valid {
+  border: 1px solid lightgreen;
+
+}
+
+.error {
+  font-size: 12px;
+  color: tomato;
+}

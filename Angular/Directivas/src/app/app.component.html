@@ -1,3 +1,5 @@
+<app-lista-episodios></app-lista-episodios>
+<app-semaforo></app-semaforo>
 <div>
   <button (click)="cambiaColor('red')"> Rojo </button>
   <button (click)="cambiaColor('green')"> Verde </button>
@@ -5,7 +7,7 @@
 </div>
 <input type="text" (input)="onInput($event)">
 <input type="range" (input)="onInputRange($event)">
-<p [ngStyle]="estilosParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate iste
+<p [ngStyle]="estilosParrafo" subrayado>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate iste
   totam, pariatur nostrum illo sapiente
   non eos earum laborum doloremque explicabo molestias dolore vero dignissimos nam aperiam laboriosam facilis impedit
   maiores! Omnis, reprehenderit blanditiis. Cumque, sed laudantium. Qui distinctio accusamus dolores eius nobis sunt.
@@ -17,9 +19,6 @@
   Cum dolor culpa architecto!
 </p>
 
-<p [ngClass]="{ parrafo: activaClase }"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi earum commodi
-  officiis
-  aperiam
-  numquam obcaecati
-  consequuntur consequatur illo, officia placeat sit voluptates et totam doloremque, iusto sequi quidem, magni
-  dignissimos.</p>
+<p subrayado> Este párrafo está subrayado</p>
+
+<p [ngClass]="{ parrafo: activaClase }"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>

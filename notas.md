@@ -149,3 +149,9 @@ Implementa todas las acciones disponibles para el trabajo con ficheros. La mayor
 
 * ngStyle -> modificar dinámicamente los estilos
 * ngClass -> modificar dinámicamente las clases
+
+## Formularios
+- Clases
+  - Valid / invalid
+  - Touched / untouched
+  - Dirty / pristine

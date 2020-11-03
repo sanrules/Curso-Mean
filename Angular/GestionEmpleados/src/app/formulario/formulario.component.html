@@ -1,0 +1,22 @@
+<div class="form-group">
+  <label for="nombre"> Nombre </label>
+  <input type="text" name="nombre" id="nombre" class="form-control" [(ngModel)]="nuevoEmpleado.nombre">
+</div>
+<div class="form-group">
+  <label for="apellidos"> Apellidos </label>
+  <input type="text" name="apellidos" id="apellidos" class="form-control" [(ngModel)]="nuevoEmpleado.apellidos">
+</div>
+<div class="form-group">
+  <label for="dni"> DNI </label>
+  <input type="text" name="dni" id="dni" class="form-control" [(ngModel)]="nuevoEmpleado.dni">
+</div>
+<div class="form-group">
+  <label for="apellidos"> Departamento </label>
+  <select name="departamento" id="departamento" class="form-control" [(ngModel)]="nuevoEmpleado.departamento">
+    <option value="marketing">Marketing</option>
+    <option value="desarrollo">Desarrollo</option>
+    <option value="contabilidad">Contabilidad</option>
+  </select>
+</div>
+<button class="btn btn-block btn-info" (click)="onClick()">Enviar</button>
+{{ nuevoEmpleado | json}}

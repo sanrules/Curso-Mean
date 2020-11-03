@@ -1,0 +1,16 @@
+.producto img {
+  width: 120px;
+  height: 120px;
+}
+
+.producto {
+  cursor: pointer;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
+.productos {
+  display: inline-flex;
+}

@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4">
+      <app-formulario (enviaEmpleado)="onEnviaEmpleado($event)"></app-formulario>
+    </div>
+    <div class="col-8">
+      <app-lista [empleados]="arrEmpleados"></app-lista>
+    </div>
+  </div>
+
+  <app-lista [empleados]="recuperarContabilidad('contabilidad')"></app-lista>
+</div>

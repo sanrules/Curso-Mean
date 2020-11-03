@@ -1,0 +1,8 @@
+<h2> {{titulo}} </h2>
+<div class="productos">
+  <div *ngFor="let producto of productos" class="producto" (click)="addListaSeleccionados(producto)">
+    <img src={{producto.url_imagen}} alt={{producto.nombre}} />
+    <h4> {{producto.nombre}} </h4>
+    <p>{{producto.precio}}</p>
+  </div>
+</div>

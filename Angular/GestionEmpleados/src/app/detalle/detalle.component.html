@@ -1,0 +1,9 @@
+<div class="empleado">
+  <h4> {{empleado.nombre}} {{empleado.apellidos}}</h4>
+  <p> {{empleado.dni}}</p>
+  <div [ngSwitch]="empleado.departamento">
+    <img src="assets/images/contabilidad.png" alt="" *ngSwitchCase="'contabilidad'">
+    <img src="assets/images/marketing.png" alt="" *ngSwitchCase="'marketing'">
+    <img src="assets/images/desarrollo.png" alt="" *ngSwitchCase="'desarrollo'">
+  </div>
+</div>
